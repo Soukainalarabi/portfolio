@@ -1,2 +1,26 @@
-.card-title{
-margin-top: 2%;}
+.container{
+    position: relative;
+    margin-top: -4rem;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #f6f6f6; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border: none;      
+}
+.container:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.img-fluid{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
