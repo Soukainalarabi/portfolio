@@ -1,3 +1,29 @@
+
+/* ////////page projet1 */
+.col-6{
+  padding-bottom: 1%;
+ 
+}
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.img-fluid{
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.comparaison btn{
+  background-color:#ffab00!important;
+}
+  .btn-outline{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+img{
+  object-fit: cover;
+}
+/*//////////////*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +34,9 @@
 body {
 	
 	font-family: 'Barlow', sans-serif;
+}
+h2{
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
 	width: 100%;
@@ -39,7 +68,7 @@ h1.main, p.demos {
 .sp-content {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	left: 0px;
 	top: 0px;
 	z-index: 1000;
@@ -77,13 +106,7 @@ h1.main, p.demos {
 	-ms-animation-delay: 6s;
 	animation-delay: 6s;
 }
-.sp-container h2.frame-4 {
-	font-size: 200px;
-	-webkit-animation-delay: 9s;
-	-moz-animation-delay: 9s;
-	-ms-animation-delay: 9s;
-	animation-delay: 9s;
-}
+
 .sp-container h2.frame-5 {
 	-webkit-animation: none;
 	-moz-animation: none;
@@ -94,29 +117,29 @@ h1.main, p.demos {
 }
 .justify-content-center {
     justify-content: center!important;
-    background-color: #040928;
+    /* background-color: #040928; */
 }
 
 
 .sp-container h2.frame-5 span {
-	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
-	-moz-animation: blurFadeIn 1s ease-in 12s backwards;
-	-ms-animation: blurFadeIn 3s ease-in 12s backwards;
-	animation: blurFadeIn 3s ease-in 12s backwards;
+	-webkit-animation: blurFadeIn 3s ease-in 9s backwards;
+	-moz-animation: blurFadeIn 1s ease-in 9s backwards;
+	-ms-animation: blurFadeIn 3s ease-in 9s backwards;
+	animation: blurFadeIn 3s ease-in 9s backwards;
 	color: transparent;
 	text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span:nth-child(2) {
-	-webkit-animation-delay: 13s;
-	-moz-animation-delay: 13s;
-	-ms-animation-delay: 13s;
-	animation-delay: 13s;
+	-webkit-animation-delay: 11s;
+	-moz-animation-delay: 11s;
+	-ms-animation-delay: 11s;
+	animation-delay: 11s;
 }
 .sp-container h2.frame-5 span:nth-child(3) {
-	-webkit-animation-delay: 14s;
-	-moz-animation-delay: 14s;
-	-ms-animation-delay: 14s;
-	animation-delay: 14s;
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
 }
 .sp-globe {
 	position: absolute;
@@ -1053,19 +1076,30 @@ h1.main, p.demos {
        
     }
   }
+  /* @media (max-width: 650px){
+    .sp-content{
+height:25%    }} */
   @media (max-width: 700px){
-    .sp-container h2.frame-5 span  {
-    font-size: 30px;
+   .sp-content{
+     height:35%
+   }
+    /* @media (max-width: 645px){
+      .sp-content{
+        height:80%
+      } */
+      .sp-container h2.frame-5 span  {
+      font-size: 40px;
+      }
+      .sp-container h2.frame-1{font-size: 40px;}
+      .sp-container h2.frame-2{    font-size: 40px;
+      }
+      .sp-container h2.frame-3{    font-size: 40px;
+      }
+      .sp-container h2 {
+       
+          line-height: 40px;
+      }
     }
-    .sp-container h2.frame-1{font-size: 30px;}
-    .sp-container h2.frame-2{    font-size: 30px;
-    }
-    .sp-container h2.frame-3{    font-size: 30px;
-    }
-    .sp-container h2 {
-     
-        line-height: 10px;
-    }}
   .side1 {
     width: 0px;
     height: 0px;
@@ -1111,13 +1145,14 @@ h1.main, p.demos {
     background-color: white;
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 20px ;
+    padding-top: 24px;
+    padding-bottom: 0px ;
     margin-bottom:0px;
     position: relative;
   }
   .timeline:before {
-    top: 0;
-    bottom: 0;
+    top: 50px;
+    bottom: 190px;
     position: absolute;
     content: " ";
     width: 3px;
@@ -1234,6 +1269,19 @@ h1.main, p.demos {
   .timeline-body > ul {
     margin-bottom: 0;
   }
+  @media(max-width:417px){
+    h4 {
+      font-weight:bold;
+      font-size:15px;
+    }
+    h6{
+      font-size: 0.7rem;
+    }
+    .timeline-body > p,
+  .timeline-body > ul {
+   font-size: 10px;
+  }
+  }
   .timeline-body > p + p {
     margin-top: 5px;
   }
@@ -1284,10 +1332,12 @@ h1.main, p.demos {
       font-size: 3.5rem;
     }
   }
-.card border{
+/* .card border{
   box-shadow: rgb(0 0 0 / 26%) 2px 0px 7px;
-}
+} */
 .card{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   border: none;
 }
 .featurette-divider{
@@ -1539,11 +1589,10 @@ textarea.input {
 
 .btn {
     padding: 0.6rem 1.3rem;
-      border: 2px solid black;
       background-color: #00000017!important;
 
     font-size: 0.95rem;
-    color: white !important;
+    color: black !important;
     line-height: 1;
     border-radius: 4px;
     outline: none;
