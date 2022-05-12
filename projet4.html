@@ -21,6 +21,11 @@
 
 
         </h2>
+        <section class="contextProjet">
+            <h2 class="card-title" style="color:#ffd7d7">Contexte du projet</h2>
+            <p class="text-start">Le projet consiste à construire un réseau social interne pour les employés de
+                Groupomania. Le but de cet outil est de faciliter les interactions entre collègues.</p>
+        </section>
         <section class="mission">
             <h2 class="card-title" style="color:#ffd7d7">La Mission</h2>
             <p class="text-start"> Développer le backend d'une application d'avis gastronomique
@@ -37,6 +42,7 @@
 
 
             <p class="text-start"><strong>Frontend:</strong> Vue js,axios,moment,Bootstrap</p>
+            <p class="text-start"><strong>Référencement:</strong> Lighthouse</p>
 
         </section>
 
@@ -96,61 +102,98 @@
         <section class="projet">
             <h2 class="card-title" style="color:#ffd7d7">Composition du site </h2>
             <ol class="text-start">
-                <li class="fs-3"> Page d'inscription / de connexion
+                <li class="fs-3"> Page d'inscription
 
                 </li>
-                <p class="text-start"> Dans un premier temps, l'utilisateur arrive sur une page d'inscription ou de
-                    connexion sécurisée : son email et son mot de passe sont enregistrés de façon cryptés dans la base
-                    de données Mongo DB.
-
-                    La page d'accueil
+                <p class="text-start"> Pour accéder au réseau social, l'utilisateur devra créer un compte, ce qui
+                    l'enregistrera de manière sécurisée dans notre base de données mySQL (email et mot de passe
+                    cryptés).
                 </p>
                 <a href="image/page1- Kanap - .png">
-                    <img src="image/Capture d’écran 2022-04-07 à 01.49.12.png" class="rounded mx-auto d-block "
-                        alt="..." width=500px height=500px></a>
+                    <img src="image/inscription.png" class="rounded mx-auto d-block " alt="..." width=500px
+                        height=500px></a>
+                <li class="fs-3"> Page de connexion
+
+                </li>
+                <p class="text-start"> Apres l'inscription l'utilisateur sera rediriger vers la page de connexion pour
+                    acceder a la page d'accueil .
+                </p>
+                <a href="image/page1- Kanap - .png">
+                    <img src="image/connexion.png" class="rounded mx-auto d-block " alt="..." width=500px
+                        height=500px></a>
 
                 <li class="fs-3"> La page d'accueil
                 </li>
-                <p class="text-start"> Une fois authentiflié, l'utilisateur est dirigé sur la page d'accueil qui
-                    présente les différentes sauces créées par les utilisateurs.
+                <p class="text-start"> Une fois authentifié, l'utilisateur est dirigé vers la page d'accueil ou il
+                    récupère toutes les publications les plus récentes avec leurs commentaires.
 
                 </p>
-                <a href="image/page2- kanap.png">
-                    <img src="image/Capture d’écran 2022-04-07 à 01.49.12.png" class="rounded mx-auto d-block "
-                        alt="..." width=500px height=500px></a>
+                <a href="image/ACCUEIL.png">
+                    <img src="image/ACCUEIL.png" class="rounded mx-auto d-block " alt="..." width=500px
+                        height=500px></a>
 
-                <li class="fs-3"> Les pages produits</li>
-                <p class="text-start"> Une page produit affiche les informations précises de la sauce.
+                <ul>
+                    <li>Créer une publication
+                    </li>
+                    <p class="text-start"> l'utilisateur a la possibilité de créer une publication qui peut contenir un
+                        texte,titre ou une image.
+                    </p>
+                    <a href="image/publication.png">
+                        <img src="image/publication.png" class="rounded mx-auto d-block " alt="..." width=500px
+                            height=500px></a>
 
-                    L'application offre la possibilité d'ajouter un "like" ou un "dislike" à la sauce.
 
-                </p>
-                <a href="image/page3-kanap.png">
-                    <img src="image/Capture d’écran 2022-04-07 à 01.49.12.png " class=" rounded mx-auto d-block "
-                        alt=" ..." width=500px height=500px></a>
+                    <li> Modifier / Supprimer une publication
+                    </li>
+                    <p class="text-start"> l'utilisateur a la possibilité de modifier et de supprimer juste ses
+                        publications en cliquant sur les trois points à droite qui apparaissent justes sur celles qui
+                        peuvent les modifier ainsi les supprimer.
+                    </p>
+                    <a href="image/modifier.png">
+                        <img src="image/modifier.png" class="rounded mx-auto d-block " alt="..." width=500px
+                            height=500px></a>
+                    <li>Créer/ Modifier / Supprimer un commentaire
+                    </li>
+                    <p class="text-start"> l'utilisateur a la possibilité de commenter n'importe quelle
+                        publication.<br>L'utilisateur a la possibilité de modifier et de supprimer juste ses
+                        commentaires en cliquant sur modifier ou supprimer qui s'affichent au-dessous du commentaire
+                        juste si l'utilisateur peut les modifier ainsi les supprimer.
+                    </p>
+                    <a href="image/commentaire.png">
+                        <img src="image/commentaire.png" class="rounded mx-auto d-block " alt="..." width=500px
+                            height=500px></a>
+                    <li>Se déconnecter / Supprimer un compte
+                    </li>
+                    <p class="text-start"> l'utilisateur a la possibilité de se déconnecter .<br>l'utilisateur a la
+                        possibilité de supprimer son compte définitivement du coup si jamais il voudra se reconnecter il
+                        sera obligé de passer par la page d'inscription car son mail n'existera plus dans la base de
+                        données.
+                    </p>
+                    <a href="image/deco2.png">
+                        <img src="image/deco2.png" class="rounded mx-auto d-block " alt="..." width=500px
+                            height=500px></a>
+                </ul>
 
-                <li class="fs-3"> Page d'ajout de sauce
-                </li>
-                <p class="text-start">L'utilisateur peut également créer une nouvelle sauce. Pour plus de sécurité, il
-                    ne pourra supprimer ou modifier que les sauces qu'il a lui-même créé.
-
-                </p>
-                <a href="image/page4-kanap.png">
-                    <img src="image/Capture d’écran 2022-04-07 à 01.49.12.png" class="rounded mx-auto d-block "
-                        alt="..." width=500px height=500px></a>
-                <!-- <li> une page descriptive pour chaque produit
-                        </li>
-                        <li> 1 page panier
-                        </li>
-                        <li>1 page de confirmation de commande
-                        </li> -->
-
-            </ol>
 
 
             </ol>
         </section>
+        <section class="mission">
+            <h2 class="card-title" style="color:#ffd7d7">Tests Unitaires</h2>
+            <p class="text-start">Pour vérifier le bon fonctionnement des différentes étapes de l'application,
+                j'ai rédigé un plan de tests unitaires où sont détaillés :
 
+            </p>
+            <ul class="text-start">
+                <li> les différents points à tester : les actions demandées.</li>
+                <li> la façon dont doit se comporter l'application : les résultats attendus.</li>
+
+            </ul>
+            <a class="btn btn-outline" style="background-color:#ffd7d7!important" href="image/P5_larabi_plan_test.pdf"
+                download>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                Voir le pdf </a>
+        </section>
         <section class="projetGit">
 
             <h2 class="card-title" style="color:#ffd7d7">Consulter le projet
@@ -159,7 +202,8 @@
 
 
 
-                Retrouvez le code source sur <a href="https://github.com/Soukainalarabi/projet-6">mon
+                Retrouvez le code source sur <a href="https://github.com/Soukainalarabi/projet-7"
+                    style="color:#ffd7d7">mon
                     repositories GitHub</a></p>
 
         </section>
