@@ -54,14 +54,14 @@
           </a>
         </li>
         <li>
-          <a href="#timeline" class="nav-link text-silver">
+          <a href="#w4-containere" class="nav-link text-silver">
             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
               <use xlink:href="#timeline" />
             </svg>
             Parcours </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-silver">
+          <a href="#album" class="nav-link text-silver">
             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
               <use xlink:href="#projets" />
             </svg>
@@ -69,7 +69,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-silver">
+          <a href="#formulaire" class="nav-link text-silver">
             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
               <use xlink:href="#contact" />
             </svg>
@@ -77,15 +77,7 @@
         </li>
       </ul>
     </div>
-    <noscript>
-      <div class="hamburger-content">
-        <div class="hamburger-menu">
-          <div>Parcours</div>
-          <div>Projets</div>
-          <div>Contact</div>
-        </div>
-      </div>
-    </noscript>
+
     <div class="sp-container">
       <div class="sp-content">
         <div class="sp-globe"></div>
@@ -113,7 +105,7 @@
   </div>
   <!-- //timeline -->
 
-  <div class="w4-containere">
+  <div id="w4-containere">
     <div class="container">
       <ul class="timeline">
         <li>
@@ -349,7 +341,7 @@
         </div>
       </div> -->
       <!-- /////album portoflio -->
-      <div class="album">
+      <div id="album">
         <div class="container">
 
           <div class="row ">
@@ -359,7 +351,6 @@
                   <img class="card-border" src="image/Capture chouette.png"
                     style=" object-fit: cover; width: 100%; height: 225px;" alt="">
 
-                  <hr>
 
                   <div class="card-body text-center">
                     <p class="card-text">La Chouette Agence </br>Optimisation SEO</p>
@@ -380,15 +371,14 @@
                   </div>
                 </div>
               </a>
-
+             
             </div>
             <div class="col-6">
               <a href="projet2.html">
                 <div class="card ">
-                  <img class="card-border" src="image/kanap.png"
+                  <img class="card-border" src="image/Capture d’écran 2022-04-07 à 01.45.45.png"
                     style=" object-fit: cover; width: 100%; height: 225px; " alt="">
 
-                  <hr>
 
                   <div class="card-body text-center">
                     <p class="card-text">Kanap </br>Création d'un site e-commerce</p>
@@ -414,7 +404,7 @@
             <div class="col-6">
               <a href="projet3.html">
                 <div class="card">
-                  <img class="card-border" src="image/sauce.png"
+                  <img class="card-border" src="image/Capture d’écran 2022-05-13 à 03.43.54.png"
                     style=" object-fit: cover; width: 100%; height: 225px;" alt="">
 
                   <hr>
@@ -472,7 +462,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-6">
+            <!-- <div class="col-6">
               <div class="card ">
                 <img class="card-border"
                   src="image/FireShot Capture 040 - La Chouette Agence - Entreprise de webdesign à Lyon_ - soukainalarabi.github.io.png"
@@ -525,7 +515,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -544,61 +534,48 @@
         <h2 id="titre">Contactez-Moi</h2>
 
       </div>
+      <div id="formulaire">
+        <div class="container">
 
-      <div class="container">
-
-
-        <div class="form">
-          <div class="contact-info">
-            <h3 class="title">Prenons contact</h3>
-            <p class="texte"> Si vous avez des questions sur mes services ou si vous souhaitez
-              simplement
-              dire
-              bonjour, n'hésitez pas à me contacter. </p>
-            <div class="info">
-
-              <div class="social-information"> <i class="fa fa-envelope-o"></i>
-                <p>Soukaina.larabi44@gmail.com</p>
-              </div>
-              <div class="social-information"> <i class="fa fa-map-marker"></i>
-                <p>Paris,France</p>
-              </div>
-              <div class="social-information"> <i class="fa fa-mobile-phone"></i>
-                <p>+33 07 34 45 56 </p>
-              </div>
-
+          <form method="get" class="cart__order__form">
+            <div class="cart__order__form__question">
+              <label for="lastName">Nom: </label>
+              <input type="text" name="lastName" id="lastName" required />
+              <p id="lastNameErrorMsg"></p>
             </div>
-            <div class="social-media">
-              <p>Rester connecté:</p>
-              <div class="social-icons">
-                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                <a href="#"> <i class="bi bi-twitter"></i></a>
-                <a href="#"> <i class="bi bi-instagram"></i></a>
-              </div>
+            <div class="cart__order__form__question">
+              <label for="firstName">Prénom: </label>
+              <input type="text" name="firstName" id="firstName" required />
+              <p id="firstNameErrorMsg">
+                <!-- ci est un message d'erreur -->
+              </p>
             </div>
-          </div>
+            <div class="cart__order__form__question">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" required />
+              <p id="emailErrorMsg"></p>
+            </div>
+            <div class="cart__order__form__question">
+              <label for="firstName">Sujet: </label>
+              <input type="text" name="firstName" id="firstName" required />
+              <p id="firstNameErrorMsg">
+              </p>
+            </div>
+            <div class="cart__order__form__question">
+              <label for="firstName">Votre message: </label>
 
-          <div class="contact-info-form"> <span class="circle one"></span> <span class="circle two"></span>
-            <form action="#" onclick="return false;" autocomplete="off">
-              <!-- <h3 class="title">Contact us</h3> -->
-              <div class="social-input-containers"> <input type="text" name="name" class="input"
-                  placeholder="Nom / Prénom" /> </div>
-              <div class="social-input-containers"> <input type="email" name="email" class="input"
-                  placeholder="E-mail" />
-              </div>
-              <div class="social-input-containers"> <input type="tel" name="phone" class="input"
-                  placeholder="Téléphone" />
-              </div>
-              <div class="social-input-containers textarea"> <textarea name="message" class="input"
-                  placeholder="Merci de détailler le plus possible votre besoin afin de faciliter nos échanges ..."></textarea>
-              </div> <input type="submit" value="Send" class="btn" />
-            </form>
-          </div>
+              <input type="textarea" name="firstName" id="firstName" required />
+              <p id="firstNameErrorMsg">
+              </p>
+            </div>
+            <div class="cart__order__form__submit">
+              <input type="submit" value="Envoyer !" id="order" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-
   <!-- </main> -->
   <!-- ////footer -->
 
@@ -624,6 +601,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

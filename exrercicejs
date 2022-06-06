@@ -1,0 +1,42 @@
+// JavaScript code below
+// Use printErr(...) to debug your solution.
+
+function closestToZero(ts) {
+    if (ts.length == 0) {
+        return 0;
+    }
+    let positifs = [];
+    let negatifs = [];
+
+    for (n of ts) {
+        if (n > 0) {
+            positifs.push(n);
+        }
+        else {
+            negatifs.push(n);
+        }
+    }
+    let minPostif = 5526;
+    let maxNegatif = -273;
+
+    for (n of positifs) {
+        if (minPostif >= n) {
+            minPostif = n;
+        }
+    }
+
+    for (n of negatifs) {
+        if (maxNegatif <= n) {
+            maxNegatif = n;
+        }
+    }
+    if ((maxNegatif * -1) < minPostif) {
+        return maxNegatif
+    } else if ((maxNegatif * -1) > minPostif) {
+        return minPostif
+    } else {
+        return minPostif;
+    }
+
+    // Your code goes here
+}
