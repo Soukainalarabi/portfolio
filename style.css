@@ -549,7 +549,10 @@ h1.main, p.demos {
     height: 100vh;
     z-index: 999;
   }
-  
+  #pageAccueil{
+    opacity: 1;
+    background-image: url("https://miro.medium.com/max/3840/1*X3ZLQ6Zu5kH5BdUseJU73w.png");
+  }
   .background {
     margin: 0;
     width: 100%;
@@ -562,17 +565,7 @@ h1.main, p.demos {
 
   }
   
-   /* p {
-    color: #fff;
-    font-size: 30px;
-    font-weight: lighter;
-    font-family: forte;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 14%;
-    left: 90%;
-    cursor: pointer;
-  }  */
+   
   
   .containere {
     margin: 0;
@@ -597,6 +590,21 @@ h1.main, p.demos {
     text-shadow: 1px 1px 15px lightgrey;
     font-weight: lighter;
   } 
+  #contacter {
+    /* position: absolute;
+   transform: translate(-50%, -50%);
+   top: 115%;
+   left: 50%;  */
+   text-align: center;
+   color: rgb(0, 0, 0);
+   font-family: verdana;
+   font-size: 40px;
+   letter-spacing: 20px;
+   opacity: 0.6;
+   transition: 2s;
+   text-shadow: 1px 1px 15px lightgrey;
+   font-weight: lighter;
+ } 
   .title-icons{
       text-align: center;
   }
@@ -750,7 +758,9 @@ h1.main, p.demos {
     cursor: pointer;
     color: rgb(0, 0, 0);
   }
-  
+  .col{
+    text-align: center;
+  }
   #content3:hover {
     transition: 2s;
     margin-top: 60px;
