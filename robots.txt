@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /includes/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+
+Sitemap: https://soukainalarabi.github.io/portfolio/sitemap.xml
